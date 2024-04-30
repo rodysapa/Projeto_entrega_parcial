@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Resgate a Fauna</title>
+    <style>
+.container {
+  display: flex;
+}
+
+.image-container {
+  flex: 40%;
+  display: flex;
+}
+
+.content {
+  flex: 30%;
+  display: flex;
+  margin: 12px;
+  padding: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+.item{
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 20px;
+  
+		}
+	</style>
+</head>
+<body>
+    <section class="container">
+      <h1>Cadastro</h1>     
+          <form class="item">
+            <div class="content">
+            <label for="firstname">Nome</label><br>
+            <input type="text" id="firstname" name="firstname" required><br>
+            <label for="state">Estado</label><br>
+            <input type="text" id="state" name="state" required>
+            <label for="birthdate">Data de Nascimento</label><br>
+            <input type="date" id="birthdate" name="birthdate" required>
+            <label for="password">Senha</label><br>
+            <input type="password" id="password" name="password" required><br>
+          </div>
+          <div class="content">
+            <label for="lastname">Sobrenome</label><br>
+            <input type="text" id="lastname" name="lastname" required><br>
+            <label for="city">Cidade</label><br>
+            <input type="text" id="city" name="city" required>
+            <label for="email">E-mail</label><br>
+            <input type="email" id="email" name="email" required>
+            <label for="confirmpassword">Confirmar Senha</label><br>
+            <input type="password" id="confirmpassword" name="confirmpassword" required><br>
+            <br> <!--quebra de linha-->
+            <br>
+            <input type="submit" value="Enviar" class="item">
+            </form>
+
+          </div>
+           
+            
+        
+        <div class="image-container">
+            <img src="/images/image-1.png" alt="Golfinho" style="width:auto;height:auto;">
+        </div>
+    </section>
+    
+</body>
+<!--<div class="item"></div>
+            <div class="item">Sobrenome</div>
+            <div class="item">Estado</div>
+            <div class="item">Cidade</div>
+            <div class="item">Data de Nasc.</div>
+            <div class="item">E-mail</div>
+            <div class="item">Senha</div>
+            <div class="item">Confirmar Senha</div>-->
+</html>
